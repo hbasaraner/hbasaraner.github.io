@@ -1,80 +1,109 @@
-<!--
-
-██╗  ██╗██████╗ ███████╗██████╗ ███╗   ██╗██████╗    ███╗   ██╗███████╗████████╗
-██║  ██║██╔══██╗██╔════╝██╔══██╗████╗  ██║██╔══██╗   ████╗  ██║██╔════╝╚══██╔══╝
-███████║██████╔╝███████╗██████╔╝██╔██╗ ██║██████╔╝   ██╔██╗ ██║█████╗     ██║   
-██╔══██║██╔══██╗╚════██║██╔══██╗██║╚██╗██║██╔══██╗   ██║╚██╗██║██╔══╝     ██║   
-██║  ██║██████╔╝███████║██║  ██║██║ ╚████║██║  ██║██╗██║ ╚████║███████╗   ██║   
-╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝
-
-  
--->
-
 <!DOCTYPE html>
 <html>
 	<title>Hayrettin Başaraner</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#5E5E5E">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-	<link rel="icon" href="images\favicon.ico" type="image/x-icon"/>
-	<link rel="shortcut icon" href="images\favicon.ico" type="image/x-icon"/>
-	
-	<!-- Let the design begin! -->
+	<meta name="theme-color" content="#0d1117">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;600&display=swap" rel="stylesheet">
+	<script src="./script.js"></script>
 	<style>
-	body,h1 {font-family: "Raleway", sans-serif}
-	body, html {height: 100%}
-	.bgimg {
-	   background-image: url('images/bg.png');
-	    min-height: 100%;
-	    background-position: center;
-	    background-size: cover;
-	}
-	
-	
-	#video-background {
-	      position: fixed;
-	      right: 0; 
-	      bottom: 0;
-	      min-width: 100%; 
-	      min-height: 100%;
-	      width: auto; 
-	      height: auto;
-	      z-index: -100;
-	    }
-	
-	table td:hover {
-		color:#fff!important;
-		background-color:#616161!important;
-	}
+		:root {
+			--background-color: #0d1117;
+			--text-color: white;
+			--link-color: #ffd700;
+		}
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			/* border: 1px solid red; */
+		}
+		html {
+			background-color: #0d1117;
+			color: aliceblue;
+			font-family: 'Source Code Pro', monospace;
+			transition: all 0.2s ease-in-out;	
+			font-size: 20px;
+		}
+		.wrapper {
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.header, .desc {
+			padding: 1rem;
+		}
+		p{
+			text-align: justify;
+		}
+		ul {
+			list-style: none;
+			overflow: hidden;
+		}
+		li {
+			float: left;
+		}
+		li a {
+			display: block;
+			text-align: center;
+			text-decoration: none;
+			padding: 1rem;
+			color: rgb(25, 148, 255);
+			transition: all 0.2s ease-in-out;
+		}
+		li a:hover {
+			background-color: #ffd700;
+			border-radius: 0.25rem;
+			color: #0d1117;
+		}
+		footer {
+			position: absolute;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			bottom: 1rem;
+		}
+		@media screen and (max-height: 650px) {
+			footer {
+				display: none;
+			}
+		}
+		@media screen and (max-width: 650px) {
+			html {
+				font-size: 0.8rem;
+			}
+		}
+		@media screen and (max-width: 450px) {
+			html {
+				font-size: 0.6rem;
+			}
+		}
 	</style>
-	
 	<body>
-	
-	<!-- If you know how to make %25 transparent, has loop and no video controller background video, please contact with me: hbsrnr@outlook.com -->
-	<!-- <iframe id="video-background" src="https://www.youtube.com/embed/A89_enDDJn0?controls=0&showinfo=0&rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe> -->
-	
-	<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-	  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-	    <table><tr>
-	    	<td><a style="text-decoration:none; padding: 3px;" onclick="alert('Yakında!');">Blog</a></td>
-	        <td><a style="text-decoration:none; padding: 3px;" href="cv.html">CV</a></td>
-		</tr></table>
-	  </div>
-	  <div class="w3-display-middle">
-	    <h1 class="w3-jumbo w3-animate-top" align=center>Hayrettin Başaraner</h1>
-	    <hr class="w3-border-red w3-animate-zoom" style="margin:auto;width:100%">
-	    <p class="w3-large w3-center w3-animate-bottom">Computer Science Student, Dokuz Eylul University</p>
-	  </div>
-	  
-	  <div class="w3-display-bottomright w3-padding-large">
-	  	<a style="text-decoration:none; padding:3px;" href="https://twitter.com/hbsrnr" class="w3-aqua"><i class="fab fa-twitter-square"></i> Twitter</a> | 
-		<a style="text-decoration:none; padding: 3px;" href="https://www.linkedin.com/in/hbsrnr" class="w3-cyan"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
-		<a style="text-decoration:none; padding: 3px;" href="https://github.com/hbsrnr" class="w3-dark-grey"><i class="fab fa-github"></i> GitHub</a>
-	  </div>
-	</div>
-	
+		<div class="wrapper">
+			<div class="header">
+				<h1 id="header">Under Construction</h1>
+			</div>
+			<div class="desc">
+				<p id="desc">This site is using old-school technology. So, I decided to update. Until that, you can follow/contact with me with the links given below.</p>
+			</div>
+			<div class="social">
+				<ul>
+					<li><a href="mailto:hayrettin@basaraner.dev" target="_blank">Mail</a></li>
+					<li><a href="https://github.com/hbasaraner" target="_blank">Github</a></li>
+					<li><a href="https://stackoverflow.com/users/8502785/hbasaraner" target="_blank">StackOverflow</a></li>
+					<li><a href="https://www.linkedin.com/in/hbasaraner/https://www.linkedin.com/in/hbasaraner/" target="_blank">LinkedIn</a></li>
+					<li><a href="https://twitter.com/hbasaraner" target="_blank">Twitter</a></li>
+				</ul>
+			</div>
+		</div>
+		<footer>
+			<span>BASARANER<sup>.DEV</sup>&nbsp;&boxh;&nbsp;<span id="year">2021</span></span><br/>
+		</footer>
 	</body>
 </html>
